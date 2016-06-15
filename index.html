@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Check-question-app</title>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="src/css/sweetAlert2.min.css" media="screen" title="no title" charset="utf-8">
+  <!-- <link rel="stylesheet" href="src/css/sweetAlert2.min.css" media="screen" title="no title" charset="utf-8"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css" media="screen" charset="utf-8"> -->
+  <!-- <link href="src/css/font-awesome.min.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+
+  <style media="screen">
+    h1 {
+      text-align: center;
+    }
+
+    .square {
+      width: 50%;
+      float: left;
+      text-align: center;
+      padding-bottom: 2.5%;
+    }
+
+    body, button {
+      background: #02AAB0; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    button {
+      height: 100%;
+      width: 50%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>
+    <!-- cycling svg  credit to Vicons Design: Saw Blade : link : https://thenounproject.com/search/?q=cicling&i=50495-->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="50px" height="50px" x="0px" y="20px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M50.596,94.698c2.301-5.682-0.949-8.716-4.725-11.6  c-2.861-2.186-5.68-4.437-8.408-6.787c-1.543-1.33-2.432-1.407-3.555,0.546c-3.613,6.291-7.9,7.739-15.672,4.979  c7.049-2.459,6.42-7.354,5.117-12.692c-0.635-2.597-0.836-5.387-0.699-8.062c0.199-3.955-1.949-3.682-4.662-3.22  C11.658,58.938,7.99,56.826,5,50.116c6.662,3.492,9.496-0.946,12.547-5.233c2.23-3.132,4.754-6.056,7.521-9.544  c-6.518-3.37-9.99-8.331-7.545-16.013c0.326,0.104,0.85,0.117,0.945,0.325c1.982,4.347,5.646,4.803,9.738,4.251  c4.812-0.649,9.619-1.335,13.518-1.877c0.445-4.108,0.338-8.062,1.465-11.628c0.656-2.08,3.283-3.538,5.576-5.093  c-2.037,6.941,2.643,9.592,6.854,12.643c2.904,2.103,5.582,4.518,8.775,7.137c2.826-3.698,5.1-8.509,10.846-8.365  c1.721,0.042,3.434,0.356,5.609,1.031c-6.695,3.422-5.428,8.559-4.133,13.891c0.566,2.34,0.576,4.877,0.455,7.306  c-0.164,3.276,1.037,4.033,4.133,3.26c5.5-1.372,9.676,0.388,12.59,4.975c0.383,0.6,0.549,1.337,1.105,2.75  c-5.711-3.227-8.701-0.197-11.494,3.544c-2.748,3.684-5.602,7.287-7.809,10.146c2.719,3.636,5.588,6.683,7.42,10.26  c0.902,1.76-0.115,4.504-0.807,7.159c-3.498-7.059-9.105-5.063-14.402-4.348c-3.418,0.461-6.855,0.766-10.971,1.217  C60.248,85.513,58.107,91.11,50.596,94.698z M50.018,56.749c3.719,0.007,6.994-3.184,7.01-6.832  c0.016-3.376-3.615-6.948-7.055-6.936c-3.535,0.012-6.904,3.417-6.92,6.995C43.035,53.675,46.189,56.741,50.018,56.749z"/></svg>
+    <!-- End of svg  -->
+      Check your Hugbway stations</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="square"> <button id="home" value="home"> <i class="fa fa-home fa-5x item"></i> </button> </div>
+    <div class="square"> <button id="work" value="work"> <i class="fa fa-briefcase fa-5x item" aria-hidden="true"> </button></i> </div>
+    <div class="square"> <button id="relax" value="relax"> <i class="fa fa-tree fa-5x item" aria-hidden="true"></i>  </button></div>
+    <div class="square"> <button id="coffee" value="coffee"> <i class="fa fa-coffee fa-5x item" aria-hidden="true"></i> </button> </div>
+  </div>
+
+	<footer>Click here to access the list of stations</footer>
+
+  <!-- other p. logos -->
+  <!-- <i class="fa fa-book fa-5x" aria-hidden="true"></i> -->
+  <!-- <i class="fa fa-building fa-5x" aria-hidden="true"></i> -->
+  <!-- <script src="https://use.fontawesome.com/56955fefd9.js"></script> -->
+  <script type="text/javascript" src="src/js/sweetAlert2.min.js"></script>
+  <script type="text/javascript" src="src/js/index.js"></script>
+</body>
+</html>
