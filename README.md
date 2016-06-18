@@ -1,4 +1,4 @@
-# hubway-alerts
+# hubway-alerts (Far away from being done - working progress)
 
 Check the status of your favorite stations and get notified you when your most used stations are about to run out of bikes.
 
