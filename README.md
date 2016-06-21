@@ -18,6 +18,14 @@ Upcoming
 4. create better css Button design: [link](http://codepen.io/search/pens/?limit=all&page=6&q=buttons)
 5. add notification feature (checks station every 10mn)
 
+## Installation guide
+
+```sh
+  > git clone https://github.com/mohamedhayibor/hubway-alerts.git
+  > npm i
+  > npm start (to run the app)
+```
+
 ### Spec
 
 ## license

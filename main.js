@@ -1,13 +1,15 @@
 'use strict';
+/* Reverse engineering mainly from repo active-collab-desktop
+*/
 
 const electron = require('electron');
-// Module to control the application lifecycle
-const {app} = electron;
-// Module to create native browser window.
-const {BrowserWindow} = electron;
+const ipc = electron.ipcMain;
 
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is garbage collected.
+// check if really needed
+const Menu = electron.Menu;
+const {app} = electron;
+const { BrowserWindow } = electron;
+
 let win;
 
 function createWindow() {
